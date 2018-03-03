@@ -1,0 +1,3 @@
+SUCCESS
+
+Username : ${sessionScope.userId}
