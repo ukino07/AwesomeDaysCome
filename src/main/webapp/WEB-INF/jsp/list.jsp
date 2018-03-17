@@ -1,4 +1,4 @@
-
+Username : ${sessionScope.userId} 님 : D
 
 <form id="loginForm" action="/login" title="" method="post">
     <div>
@@ -9,5 +9,9 @@
         <div>
             <input type="submit" id="loginButton"  name="loginButton" value="LOGIN">
         </div>
+    </div>
+    <div>
+        <label for="result">result: </label>
+        <input type="text" id="result" value="" />
     </div>
 </form>

@@ -1,5 +1,6 @@
-package com.evolution;
+package com.evolution.login.controller;
 
+import com.evolution.login.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,7 +30,7 @@ public class LoginController {
         if (loginService.login(id, pw)) {
             HttpSession httpSession = httpServletRequest.getSession();
             httpSession.setAttribute("userId", id);
-            return "login";
+            return "redirect:/notes";
         }
         return "index";
     }
