@@ -30,7 +30,7 @@ public class LoginController {
         if (loginService.login(id, pw)) {
             HttpSession httpSession = httpServletRequest.getSession();
             httpSession.setAttribute("userId", id);
-            return "redirect:/notes";
+            return "redirect:/notes갸";
         }
         return "index";
     }

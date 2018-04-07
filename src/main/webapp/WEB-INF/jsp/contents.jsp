@@ -6,6 +6,8 @@
 
 </head>
 <body>
+<a href="/view/edit/${note.noteNo}">수정하기</a>
+<a href="/notes/delete/${note.noteNo}">삭제하기</a>
 <table>
     <tr>
         <th>번호</th>
